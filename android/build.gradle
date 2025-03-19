@@ -12,10 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-allprojects {
+buildscript {
     repositories {
         google()
         mavenCentral()
+    }
+    dependencies {
+        ext.kotlin_version = '1.8.10'
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
