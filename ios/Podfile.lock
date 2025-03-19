@@ -33,8 +33,9 @@ PODS:
     - SDWebImage/Core (~> 5.17)
   - speech_to_text (0.0.1):
     - Flutter
+    - FlutterMacOS
     - Try
-  - sqflite (0.0.3):
+  - sqflite_darwin (0.0.4):
     - Flutter
     - FlutterMacOS
   - Try (2.1.1)
@@ -44,8 +45,8 @@ DEPENDENCIES:
   - flutter_image_compress_common (from `.symlinks/plugins/flutter_image_compress_common/ios`)
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
-  - speech_to_text (from `.symlinks/plugins/speech_to_text/ios`)
-  - sqflite (from `.symlinks/plugins/sqflite/darwin`)
+  - speech_to_text (from `.symlinks/plugins/speech_to_text/darwin`)
+  - sqflite_darwin (from `.symlinks/plugins/sqflite_darwin/darwin`)
 
 SPEC REPOS:
   trunk:
@@ -65,9 +66,9 @@ EXTERNAL SOURCES:
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
   speech_to_text:
-    :path: ".symlinks/plugins/speech_to_text/ios"
-  sqflite:
-    :path: ".symlinks/plugins/sqflite/darwin"
+    :path: ".symlinks/plugins/speech_to_text/darwin"
+  sqflite_darwin:
+    :path: ".symlinks/plugins/sqflite_darwin/darwin"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
@@ -78,8 +79,8 @@ SPEC CHECKSUMS:
   path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
   SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
   SDWebImageWebPCoder: e38c0a70396191361d60c092933e22c20d5b1380
-  speech_to_text: ae2abc312e619ff1c53e675a9fc4d785a15c03bb
-  sqflite: c35dad70033b8862124f8337cc994a809fcd9fa3
+  speech_to_text: 9dc43a5df3cbc2813f8c7cc9bd0fbf94268ed7ac
+  sqflite_darwin: 20b2a3a3b70e43edae938624ce550a3cbf66a3d0
   Try: 5ef669ae832617b3cee58cb2c6f99fb767a4ff96
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
