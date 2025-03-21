@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -21,9 +22,11 @@ import 'package:flutter/foundation.dart';
 
 import './web_setup.dart';
 
-void main() {
+void main() async {
   Animate.restartOnHotReload = true;
   if (kIsWeb) loadPicaScript();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const sudokuApp());
 }
 
