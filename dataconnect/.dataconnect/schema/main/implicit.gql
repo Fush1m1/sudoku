@@ -1,3 +1,0 @@
-extend type Activity {
-  placeRef: String! @fdc_generated(from: "Activity.place", purpose: IMPLICIT_REF_FIELD)
-}
