@@ -21,7 +21,7 @@ project(runner LANGUAGES CXX)
 set(BINARY_NAME "sudoku")
 # The unique GTK application identifier for this application. See:
 # https://wiki.gnome.org/HowDoI/ChooseApplicationID
-set(APPLICATION_ID "com.example.sudoku")
+set(APPLICATION_ID "com.fush1m1.sudoku")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

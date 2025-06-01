@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.sudoku
+package com.fush1m1.sudoku
 
 import io.flutter.embedding.android.FlutterActivity
 
