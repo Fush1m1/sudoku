@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../activities_feature/models/activity.dart';
-import '../../../common/utilties.dart';
-import '../../../common/services/navigation.dart';
+import '../../../src/util/utilties.dart';
+import '../../../src/util/navigation.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({

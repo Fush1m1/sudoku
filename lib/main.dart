@@ -13,15 +13,15 @@
 // limitations under the License.
 
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'src/util/firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:sudoku/common/utilties.dart';
-import './common/services/navigation.dart';
+import 'package:sudoku/src/util/utilties.dart';
+import 'src/util/navigation.dart';
 import 'package:flutter/foundation.dart';
 
-import './web_setup.dart';
+import 'src/util/web_setup.dart';
 
 void main() async {
   Animate.restartOnHotReload = true;

@@ -4,7 +4,7 @@ import 'package:sudoku/legacy/activities_feature/presentation/activity_list_tile
 import '../view_models/activities_viewmodel.dart';
 
 import '../models/activity.dart';
-import '../../../common/services/navigation.dart';
+import '../../../src/util/navigation.dart';
 import '../../detailed_itinerary/presentation/legacy_itinerary.dart';
 
 class ActivitiesScreen extends StatefulWidget {

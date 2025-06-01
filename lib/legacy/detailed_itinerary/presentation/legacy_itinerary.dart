@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:sudoku/ai/styles.dart';
+import 'package:sudoku/legacy/ai/styles.dart';
 
 import '../../activities_feature/models/activity.dart';
 import './components/components.dart';
-import '../../../common/services/navigation.dart';
+import '../../../src/util/navigation.dart';
 
 class LegacyItinerary extends StatefulWidget {
   const LegacyItinerary({super.key});
