@@ -53,5 +53,15 @@
 	<string>Let user upload photos from Photo Library</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Let users take photos with device camera to upload</string>
+	<!-- Google Sign-In -->
+	<key>CFBundleURLTypes</key>
+	<array>
+	<dict>
+		<key>CFBundleURLSchemes</key>
+		<array>
+		<string>com.googleusercontent.apps.597085939959-k6ij1cg8ir361eg2chukivr4rk9qtbsh</string>
+		</array>
+	</dict>
+	</array>
 </dict>
 </plist>

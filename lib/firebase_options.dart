@@ -64,7 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '597085939959',
     projectId: 'sudoku-9ee4c',
     storageBucket: 'sudoku-9ee4c.firebasestorage.app',
-    iosBundleId: 'com.example.sudoku',
+    iosBundleId: 'com.fush1m1.sudoku',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -73,7 +73,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '597085939959',
     projectId: 'sudoku-9ee4c',
     storageBucket: 'sudoku-9ee4c.firebasestorage.app',
-    iosBundleId: 'com.example.sudoku',
+    iosBundleId: 'com.fush1m1.sudoku',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

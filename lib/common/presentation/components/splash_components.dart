@@ -15,6 +15,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sudoku/ai/styles.dart';
+import 'package:sudoku/common/auth/login.dart';
 
 class AIDreamTripButton extends StatelessWidget {
   const AIDreamTripButton({
@@ -106,7 +107,10 @@ class LegacyFindMyTripButton extends StatelessWidget {
           Colors.black,
         ),
       ),
-      onPressed: () => context.go('/legacy'),
+      onPressed: () => {
+        context.go('/legacy'),
+        signInWithGoogle(),
+      },
       child:
           const Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Center(
