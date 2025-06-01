@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sudoku/ai/styles.dart';
+import 'package:sudoku/legacy/ai/styles.dart';
 import 'package:sudoku/legacy/results/presentation/results_screen.dart';
 
 import '../../activities_feature/models/activity.dart';
 import '../../results/presentation/results_viewmodel.dart';
-import '../../../../../common/services/navigation.dart';
+import '../../../src/util/navigation.dart';
 import '../models/travel_query.dart';
 
 import './components/components.dart';

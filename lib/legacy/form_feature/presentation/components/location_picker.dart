@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/presentation/components/thumbnail.dart';
+import '../../../../src/util/components/thumbnail.dart';
 import '../../models/models.dart';
 
 class LocationPicker extends StatefulWidget {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sudoku/ai/itineraries_feature/presentation/components/components.dart';
-import 'package:sudoku/ai/styles.dart';
+import 'package:sudoku/legacy/ai/itineraries_feature/presentation/components/components.dart';
+import 'package:sudoku/legacy/ai/styles.dart';
 import '../../../activities_feature/models/activity.dart';
 import '../../../form_feature/models/travel_query.dart';
 import '../../../results/business/model/destination.dart';
-import 'package:sudoku/common/utilties.dart';
-import '../../../../common/services/navigation.dart';
+import 'package:sudoku/src/util/utilties.dart';
+import '../../../../src/util/navigation.dart';
 import 'package:sudoku/legacy/common/widgets/tag_chip.dart';
 import 'package:sudoku/legacy/activities_feature/presentation/activity_list_tile.dart';
 

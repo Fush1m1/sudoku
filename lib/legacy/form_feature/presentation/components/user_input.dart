@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../common/utilties.dart';
+import '../../../../src/util/utilties.dart';
 
 class NumberOfTravelersPicker extends StatelessWidget {
   const NumberOfTravelersPicker(
