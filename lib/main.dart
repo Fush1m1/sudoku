@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -26,12 +27,14 @@ void main() async {
   Animate.restartOnHotReload = true;
   if (kIsWeb) loadPicaScript();
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(const sudokuApp());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const SudokuApp());
 }
 
-class sudokuApp extends StatelessWidget {
-  const sudokuApp({super.key});
+class SudokuApp extends StatelessWidget {
+  const SudokuApp({super.key});
 
   @override
   Widget build(BuildContext context) {

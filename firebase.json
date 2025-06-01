@@ -1,5 +1,1 @@
-{
-  "dataconnect": {
-    "source": "dataconnect"
-  }
-}
+{"dataconnect":{"source":"dataconnect"},"flutter":{"platforms":{"android":{"default":{"projectId":"sudoku-9ee4c","appId":"1:597085939959:android:69d032dc387ab816738bf2","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"sudoku-9ee4c","appId":"1:597085939959:ios:c553b73382ada5b9738bf2","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"sudoku-9ee4c","appId":"1:597085939959:ios:c553b73382ada5b9738bf2","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"sudoku-9ee4c","configurations":{"android":"1:597085939959:android:69d032dc387ab816738bf2","ios":"1:597085939959:ios:c553b73382ada5b9738bf2","macos":"1:597085939959:ios:c553b73382ada5b9738bf2","web":"1:597085939959:web:7ad61592d3e5ccef738bf2","windows":"1:597085939959:web:a9781b102afcc8cd738bf2"}}}}}}
