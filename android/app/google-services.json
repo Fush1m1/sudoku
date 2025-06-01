@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "53401539105",
-    "project_id": "fush1m1-resume-project",
-    "storage_bucket": "fush1m1-resume-project.firebasestorage.app"
+    "project_number": "597085939959",
+    "project_id": "sudoku-9ee4c",
+    "storage_bucket": "sudoku-9ee4c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:53401539105:android:09bb533b722a4175870960",
+        "mobilesdk_app_id": "1:597085939959:android:69d032dc387ab816738bf2",
         "android_client_info": {
           "package_name": "com.example.sudoku"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB7MhzFSnoDryjw_zdy0LeWKKkLwWtUd4c"
+          "current_key": "AIzaSyA26oei2SwiqwvF8h70ZUdWS3X28EL_FOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597085939959:android:2e8c1f548762ae99738bf2",
+        "android_client_info": {
+          "package_name": "com.fush1m1.sudoku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA26oei2SwiqwvF8h70ZUdWS3X28EL_FOI"
         }
       ],
       "services": {
