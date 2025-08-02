@@ -20,6 +20,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:sudoku/src/util/utilties.dart';
 import 'src/util/navigation.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'src/util/web_setup.dart';
 
@@ -30,7 +31,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const SudokuApp());
+  runApp(const ProviderScope(child: SudokuApp()));
 }
 
 class SudokuApp extends StatelessWidget {

@@ -164,7 +164,7 @@ class SearchButton extends StatelessWidget {
           ),
           onPressed: onPressed,
           child: const Text(
-            'Search',
+            '_Search_',
             style: TextStyle(
               color: Colors.white,
               fontSize: 18,
