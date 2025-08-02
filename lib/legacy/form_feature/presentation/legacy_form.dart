@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sudoku/legacy/ai/styles.dart';
 import 'package:sudoku/legacy/results/presentation/results_screen.dart';
+import 'package:sudoku/src/sudoku/view/sudoku_view.dart';
 
 import '../../activities_feature/models/activity.dart';
 import '../../results/presentation/results_viewmodel.dart';
@@ -57,6 +58,15 @@ class _LegacyFormScreenState extends State<LegacyFormScreen> {
       context,
       MaterialPageRoute(
         builder: (context) => const ResultsScreen(),
+      ),
+    );
+  }
+
+  void onNavigateSudokuView() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const SudokuView(),
       ),
     );
   }
@@ -136,7 +146,7 @@ class _LegacyFormScreenState extends State<LegacyFormScreen> {
               ),
             ]),
           ),
-          SearchButton(onPressed: setQueryAndGoToResults),
+          SearchButton(onPressed: onNavigateSudokuView),
         ],
       ),
     );

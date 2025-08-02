@@ -2,4 +2,4 @@
 
 powered by the compass boilerplate.
 
-organizing folders by featur, under the src directory.
+organizing folders by feature under lib/src.

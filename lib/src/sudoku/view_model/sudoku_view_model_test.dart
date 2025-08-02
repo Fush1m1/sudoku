@@ -1,0 +1,3 @@
+class SudokuViewModelTest {
+  const SudokuViewModelTest();
+}
