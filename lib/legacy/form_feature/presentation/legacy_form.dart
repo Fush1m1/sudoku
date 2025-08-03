@@ -46,8 +46,6 @@ class _LegacyFormScreenState extends State<LegacyFormScreen> {
     var date = tripDateRange;
 
     if (location == null || date == null) return;
-    // TODO: Show alert asking for location and date
-
     context.read<TravelPlan>().setQuery(
           TravelQuery(location: location, dates: date, numPeople: numPeople),
         );

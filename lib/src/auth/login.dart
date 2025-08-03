@@ -13,5 +13,4 @@ Future<void> signInWithGoogle() async {
   );
 
   await FirebaseAuth.instance.signInWithCredential(credential);
-  print('✅ Googleでサインイン: ${FirebaseAuth.instance.currentUser?.email}');
 }

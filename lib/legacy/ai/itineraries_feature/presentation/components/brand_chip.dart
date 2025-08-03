@@ -24,7 +24,7 @@ class BrandChip extends StatelessWidget {
           child: Chip(
             //color: const WidgetStatePropertyAll(Colors.transparent),
             backgroundColor:
-                Theme.of(context).colorScheme.surface.withOpacity(0.8),
+                Theme.of(context).colorScheme.surface,
             shape: const StadiumBorder(side: BorderSide.none),
             avatar: (icon != null)
                 ? Icon(icon,
