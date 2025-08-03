@@ -9,14 +9,13 @@ final sudokuProvider = NotifierProvider<SudokuNotifier, SudokuViewModel>(() {
 class SudokuNotifier extends Notifier<SudokuViewModel>{
   @override
   SudokuViewModel build() {
-    return SudokuViewModel(sudokuBoard: SudokuBoard.empty(size: 3));
+    return SudokuViewModel(sudokuBoard: SudokuBoard.empty());
   }
 
-  /// Increments the value of the top-left cell.
-  void incrementTheFirstCell() {
+  void increment(int index) {
     final newSudokuBoard = state.sudokuBoard.copyWith(
       size: state.sudokuBoard.size,
-      values: state.sudokuBoard.incrementFirstFirst(),
+      values: state.sudokuBoard.increment(index),
     );
     state = state.copyWith(
       sudokuBoard: newSudokuBoard,

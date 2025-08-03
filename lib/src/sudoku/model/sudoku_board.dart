@@ -11,24 +11,26 @@ import 'package:flutter/material.dart';
 @immutable
 class SudokuBoard {
   final int _size;
-  final List<List<int>> _values;
+  final List<int> _values;
 
   const SudokuBoard(this._size, this._values);
 
   /// returns 0-filled board.
-  factory SudokuBoard.empty({required int size}) {
+  /// 
+  /// the default size is 9.
+  factory SudokuBoard.empty({int size = 9}) {
     return SudokuBoard(
       size,
-      List.generate(size, (_) => List.filled(size, 0)),
+      List.generate(size * size, (_) => 0),
     );
   }
   
   int get size => _size;
-  List<List<int>> get values => _values;
+  List<int> get values => _values;
 
   SudokuBoard copyWith({
     int? size,
-    List<List<int>>? values,
+    List<int>? values,
   }) {
     return SudokuBoard(
       size ?? _size,
@@ -38,13 +40,8 @@ class SudokuBoard {
 }
 
 extension TmpSudokuBoardFunc on SudokuBoard {
-  /// increments [0][0]
-  /// 
-  /// TODO: delete me.
-  List<List<int>> incrementFirstFirst() {
-    if (values.isNotEmpty && values.first.isNotEmpty) {
-      values[0][0] += 1;
-    }
+  List<int> increment(int index) {
+    values[index] += 1;
     return values;
   }
 }
