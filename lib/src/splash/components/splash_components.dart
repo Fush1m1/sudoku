@@ -25,9 +25,9 @@ class AIDreamTripButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(boxShadow: [
+      decoration: const BoxDecoration(boxShadow: [
         BoxShadow(
-          color: const Color(0xff9A62E1).withOpacity(0.3),
+          color: Color(0xff9A62E1),
           spreadRadius: 8,
           blurRadius: 16,
         )

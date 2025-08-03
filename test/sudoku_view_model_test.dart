@@ -16,6 +16,14 @@ void main() {
   ];
   final state = SudokuBoard.empty().copyWith(values: example);
   final vm = SudokuViewModel(sudokuBoard: state);
+  final expected = List.generate(9, (i) => i+1);
+
+// TODO(@Fush1m1): 
+// チェック機能はvmに実装する。名称はisOkと仮称する。
+// isOkを用いて各行、各列、各サブグリッドの色が変わる挙動を実装する。
+// isOkをテストする。
+//  - 正解してるexampleモックと正解してないexampleモックに対してそれぞれisOkの返り値がTrueとFalseであることをテストする。
+
 test('任意の縦列に1~9までの数字が1つずつ入力されていること', () {
   final size = vm.sudokuBoard.size;
   final values = vm.sudokuBoard.values;
@@ -24,7 +32,6 @@ test('任意の縦列に1~9までの数字が1つずつ入力されているこ�
   List.generate(size, (x) {
     final column = List.generate(size, (y) => values[size * y + x]);
     column.sort();
-    final expected = List.generate(9, (i) => i+1);
     expect(column, expected);
   });
 });
