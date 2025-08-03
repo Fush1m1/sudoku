@@ -12,37 +12,62 @@ class SudokuView extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Sudoku Board')),
-      body: Column(
-        children: [
-          _SudokuTableArea(sudokuBoard),
-          ElevatedButton(
-            onPressed: () {
-              ref.read(sudokuProvider.notifier).incrementTheFirstCell();
-            },
-            child: const Text('Increment [0][0]'),
-          ),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 450,
+              child: _SudokuGrid(sudokuBoard, ref.read(sudokuProvider.notifier).increment),
+            ),
+            const _LeftAlignedFittedText("任意の縦列に1~9までの数字が1つずつ入力されていること"),
+            const _LeftAlignedFittedText("任意の横列に1~9までの数字が1つずつ入力されていること"),
+            const _LeftAlignedFittedText("3x3のサブグリッドそれぞれに1~9までの数字が1つずつ入力されていること"),
+          ],
+        ),
       ),
     );
   }
 }
 
-class _SudokuTableArea extends StatelessWidget {
-  const _SudokuTableArea(this.sudokuBoard);
+class _SudokuGrid extends StatelessWidget {
+  const _SudokuGrid(this.sudokuBoard, this.onTap);
 
   final SudokuBoard sudokuBoard;
+  final void Function(int) onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Table(
-      border: TableBorder.all(),
-      children: sudokuBoard.values.map((row) {
-        return TableRow(
-          children: row.map((value) {
-            return Text(value.toString());
-          }).toList(),
-        );
-      }).toList(),
+    final size = sudokuBoard.size;
+    return GridView.count(
+      crossAxisCount: size,
+      physics: const NeverScrollableScrollPhysics(),
+      children: List.generate(
+        size * size,
+        (index) => GestureDetector(
+          onTap: () => onTap(index),
+          child: Container(
+            margin: const EdgeInsets.all(4),
+            color: Colors.blueAccent,
+            child: Center(
+              child: Text('${sudokuBoard.values[index]}'),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _LeftAlignedFittedText extends StatelessWidget {
+  const _LeftAlignedFittedText(this.text);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: FittedBox(child: Text(text)),
     );
   }
 }
